@@ -1,0 +1,4 @@
+# Project exclude paths
+/venv/
+STATS_TFT-721b6911624d.json
+.idea
