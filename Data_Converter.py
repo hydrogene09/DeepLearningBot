@@ -54,6 +54,6 @@ for column in range(3, 58):
 
             StatSheet.close
             StatSheet = open(str(name) + filename + str(lvl) + str(extension), "r")
-            print(StatSheet.read())
+            print(StatSheet.read(fullStr))
 
         lvl = lvl + 1
