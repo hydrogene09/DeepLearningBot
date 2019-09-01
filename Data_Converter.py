@@ -11,7 +11,7 @@ extension = ".txt"
 
 
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('STATS_TFT-721b6911624d.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('SSTATSTFT-2133776c086c.json', scope)
 client = gspread.authorize(creds)
 
 sheet = client.open('STATS TFT').sheet1
