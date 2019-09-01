@@ -28,7 +28,10 @@ for column in range(2, 58):
 
             value = sh.cell_value(row, column)
             print(value)
-            StatSheet.write(value)
+            valuevalue = list()
+            value2 = value
+            valuevaluevalue = [str(i) for i in value2]
+            StatSheet.write((valuevalue))
             
             StatSheet.close
             StatSheet = open(name + filename + str(lvl) + extension, "r")
