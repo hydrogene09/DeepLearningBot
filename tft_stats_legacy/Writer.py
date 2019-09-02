@@ -1,8 +1,9 @@
 import xlrd
 import os
+import time
 
 
-book = xlrd.open_workbook("/Users/yuutajorand/PycharmProjects/DeepLearningBot/tft_stats/STATS_TFT.xlsx")
+book = xlrd.open_workbook("/Users/yuutajorand/PycharmProjects/DeepLearningBot/tft_stats_legacy/STATS_TFT.xlsx")
 sh = book.sheet_by_index(0)
 
 name = ""
@@ -36,6 +37,7 @@ for column in range(2, 58):
             StatSheet.close
             StatSheet = open(name + filename + str(lvl) + extension, "r")
             print(StatSheet.read())
+            time.sleep(0.1)
 
         lvl = lvl + 1
 
